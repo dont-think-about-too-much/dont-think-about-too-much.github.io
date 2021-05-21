@@ -73,3 +73,9 @@ tags: [NodeJS, Backend]
 - 부하 테스트
 - 인프라를 다시 한번 체크
 - 무중단 배포
+
+
+<br><br>
+## Reference
+
+- [https://velog.io/@city7310/](https://velog.io/@city7310/%EB%B0%B1%EC%97%94%EB%93%9C%EA%B0%80-%EC%9D%B4%EC%A0%95%EB%8F%84%EB%8A%94-%ED%95%B4%EC%A4%98%EC%95%BC-%ED%95%A8-%EC%BB%A4%EB%A6%AC%ED%81%98%EB%9F%BC-%ED%84%B8%EC%96%B4%EB%86%93%EA%B8%B0)
