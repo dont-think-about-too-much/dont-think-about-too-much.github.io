@@ -7,7 +7,6 @@ tags: [NodeJS, Backend]
 <br>
 
 # 개발 시작전: 셋팅
-- "기술부채"를 다시 한번 머리속에 넣고 개발을 하자.
 - 언어, 프레임워크
   - 언어의 특징을 알고 가기. [js,node 다운 코드?]
   - 프레임워크의 특징을 알고 가기. [express or nest 의 코드 ?]
@@ -16,7 +15,7 @@ tags: [NodeJS, Backend]
   - Query
   - Transaction
 - ORM
-- 의존성 관리: package.json (+ lock.json)을 제대로 알고 넘어값시다. 최선의 버전을 유지하는 방법
+- [의존성 관리: package.json (+ lock.json)을 제대로 알고 넘어값시다.](https://dont-think-about-too-much.github.io/2021/05/20/package-json/)
 - 서비스에 필요한 도구들(third party libarary)
 - DevOps 서버는 어디에 올릴건지? AWS?
 - 디자인 패턴( 코드의 일관성과 개발자들끼리 협업을 위해 )
