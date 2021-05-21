@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Node 백엔드 서버를 만들고 유지하기 위한 기본기
+title: Node 백엔드 서버를 만들고 유지하는 모든 과정 [API 리뉴얼 과정 기록]
 tags: [NodeJS, Backend]
-
 ---
+
 <br>
 
 > 백엔드 API 리뉴얼 모든 과정 기록
@@ -13,9 +13,10 @@ tags: [NodeJS, Backend]
 
 <br><br>
 
------------
+---
 
 # 개발 시작전: 셋팅
+
 - 언어, 프레임워크
   - 언어의 특징을 알고 가기. [js,node 다운 코드?]
   - 프레임워크의 특징을 알고 가기. [express or nest 의 코드 ?]
@@ -40,8 +41,8 @@ tags: [NodeJS, Backend]
   - 협업 진행 방식
 - Docker
 
-
 # 개발 중:
+
 - TDD 해야해요. 다만들고 테스트 코드 짜지말구요.
 - 인풋 체크 [ required/ optional / enum / type]
 - 계층의 중요성 / 계층의 독립성 유지의 중요성
@@ -59,8 +60,8 @@ tags: [NodeJS, Backend]
 - cron jobs
 - Redis
 
-
 # 개발이 어느정도 됐다.
+
 - README.md을 깔끔히
 - Load Balancing (nginx)
 - Process Manage (pm2?)
@@ -71,9 +72,9 @@ tags: [NodeJS, Backend]
   - 이것저것 써보는 동안 Grafana같은 걸로 로그 시각화도 한 번씩 해 본다.
   - StatsD같은 로그 집계 프록시를 로그 파이프라인 사이에 끼워넣어 본다.
   - 결론적으로 우리에게 가장 쓸만한 솔루션은 무엇일지 검토한다.
- [ 로깅 데이터 종류/ 로깅 방식/ 로깅 linux => s3 / 로깅 이용]
+    [ 로깅 데이터 종류/ 로깅 방식/ 로깅 linux => s3 / 로깅 이용]
 - 리펙토링을 한다.(너무 크므로 따로 뺄 예정)
-- DB를 안전하게 유지. 
+- DB를 안전하게 유지.
   - 안정성을 지킬 방도
   - 백업
   - 퍼포먼스 향상/ 쿼리 최적화
@@ -82,8 +83,8 @@ tags: [NodeJS, Backend]
 - 인프라를 다시 한번 체크
 - 무중단 배포
 
-
 <br><br>
+
 ## Reference
 
 - [https://velog.io/@city7310/](https://velog.io/@city7310/%EB%B0%B1%EC%97%94%EB%93%9C%EA%B0%80-%EC%9D%B4%EC%A0%95%EB%8F%84%EB%8A%94-%ED%95%B4%EC%A4%98%EC%95%BC-%ED%95%A8-%EC%BB%A4%EB%A6%AC%ED%81%98%EB%9F%BC-%ED%84%B8%EC%96%B4%EB%86%93%EA%B8%B0)
