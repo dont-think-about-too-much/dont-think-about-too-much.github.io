@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Node 백엔드 서버를 만들고 유지하는 모든 과정 [API 리뉴얼 과정 기록]
+title: 리뉴얼 시작 [ Node 서버 리뉴얼 기록 ]
 tags: [NodeJS, Backend]
 ---
 
