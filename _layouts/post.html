@@ -23,14 +23,16 @@ layout: default
           {{ content }}
         </div>
 
-        <div class='c-tags'>
+        <!-- tag is not working in github page -->
+        <!-- <div class='c-tags'>
           {% for tag in page.tags %}
             <a href='{{ site.baseurl }}/tag/{{ tag }}'>{{ tag }}</a>
           {% endfor %}
-        </div>
+        </div> -->
 
         <hr>
 
+        <!-- :TODO github 댓글 추가하자 -->
         <!-- {% include disqus.html %} -->
 
       </article>
