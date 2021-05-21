@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Node 백엔드 서버를 만들고 유지하기 위한 기본기
-tags: [frontpage, jekyll, blog]
+tags: [NodeJS, Backend]
 
 ---
 <br>
@@ -32,6 +32,7 @@ tags: [frontpage, jekyll, blog]
   - 협업 진행 방식
 - Docker
 
+
 # 개발 중:
 - TDD 해야해요. 다만들고 테스트 코드 짜지말구요.
 - 인풋 체크 [ required/ optional / enum / type]
@@ -40,17 +41,22 @@ tags: [frontpage, jekyll, blog]
 - github는 어떻게 해야 깔끔하게 쓰는건지.
 - 사용자 인증 방식
 - CORS
-- 파일 업로드
+- 파일 처리
+  - multer?
+  - s3
 - 이미지 최적화
   - 용량 줄여서 저장하는건 당연한 일
   - S3를 깔끔히 쓰자.
   - AWS 권한을 제대로 알고 간다.
 - cron jobs
-
+- Redis
 
 
 # 개발이 어느정도 됐다.
 - README.md을 깔끔히
+- Load Balancing (nginx)
+- Process Manage (pm2?)
+- Cache (redis)
 - 로그 시스템과 사투하기 (city7310님 참고)
   - New Relic같은 별도의 SaaS APM을 쓸 지, 로그를 CloudWatch에 남겨서 ElasticSearch로 넘길지, Elastic APM을 써볼지 등등에 대해 의사결정한다.
   - CloudWatch도 써 보고, Elastic APM도 써 보고, New Relic도 써 보고, ELK Stack도 써 보고, TICK Stack도 써 본다.
