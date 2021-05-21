@@ -6,6 +6,15 @@ tags: [NodeJS, Backend]
 ---
 <br>
 
+> 백엔드 API 리뉴얼 모든 과정 기록
+
+스펙 정립 [ing] <br>
+[git 커밋, 브렌치 방식 정립.](https://dont-think-about-too-much.github.io/2021/05/21/git-commit/) [ing]
+
+<br><br>
+
+-----------
+
 # 개발 시작전: 셋팅
 - 언어, 프레임워크
   - 언어의 특징을 알고 가기. [js,node 다운 코드?]
