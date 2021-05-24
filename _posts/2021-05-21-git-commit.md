@@ -3,8 +3,11 @@ layout: post
 title: git 커밋, 브렌치 방식 [ Node 서버 리뉴얼 기록 ]
 tags: [Nodejs, renewal, API]
 ---
+> **목차**<br>1. 커밋 방식<br>2. 개발자간의 브렌치 이용 방식 
 
-**커밋 방식**
+<br>
+
+# **커밋 방식**
 
 ```
 <타입>(적용 범위/optional): <설명>
@@ -50,9 +53,53 @@ Fixes: 이슈 수정중<br>
 Resolves: 이슈를 해결했다.<br>
 Ref: 참고할 이슈가 있음<br>
 Related to: 해당 커밋에 관련된 이슈 번호
+<br>
+<br>
+
+-----
+
+# 개발자간의 브렌치 이용 방식
+
+## 1. 태초에 마스터 브렌치가 있다.
+마스터 브랜치는 현재 서비스되고 있는 코드를 의미한다. 
+아직 서비스가 되고 있지 않다면, 지금까지 확정된 코드를 의미한다.
+
+## 2. branch 생성
+새로운 코드를 작성할때는 새로운 branch를 생성하여 작성한다.
+
+```console
+$ git checkout -b newBranch
+```
+## 3. push
+새로운 코드를 작성 후 [1] git add [2] git commit ~~ [3] push 한다.<br>
+push할때는 branch의 이름을 정확히 명시해주어야 한다.
+```console
+$ git add . # 모든 수정 내용을 추가
+$ git commit -m "feat(POST): 글 작성 기능 추가"
+$ git branch 
+main
+newBranch
+$ git push main newBranch # newBranch의 내용을 main에 추가한다.
+```
+## 4. create pull request
+push가 성공적으로 진행되면, github웹 해당 repository에 새로운 push 가 있다는 메시지기 나오게 된다.
+이 push내용에 어떤 것들을 담고 있는지 협업자들에게 설명하는 글을 작성한 후 `create pull request`를 누르면 다른 개발자들에게 `pull request`가 전달된다.
+
+## 5. Merge
+pull request를 처리하는 사람이라면 코드를 본 후 최종 코드에 합칠지 말지 결정한다.
+코드 리뷰를 디테일하게 적어주는 것이 서로의 성장에 도움이 될터이니 열심히 적어주도록 하자.
+
+## 6. 작업한 branch 삭제
+```console
+$ git branch -d newBranch
+```
+Merge된 브렌치를 지우자. 간혹 branch를 계속 남겨두어 한사람이 여러개의 branch를 생성해두는 사람이 있다. 특정 목적이 있으면 상관이 없으나. 그냥 안지웠을 뿐일 때가 꽤 많다. repo를 깔끔히 유지하기 위해, 그리고 서로의 업무 현황을 쉽게 볼수 있도록 merge한 branch는 지워버리자.
+
+> 지금까지의 브랜치 이용 순서대로 계속 진행하면 OK다.
 
 <br><br>
 
 ## Reference
 
 - [https://overcome-the-limits.tistory.com/entry/](https://overcome-the-limits.tistory.com/entry/%ED%98%91%EC%97%85-%ED%98%91%EC%97%85%EC%9D%84-%EC%9C%84%ED%95%9C-%EA%B8%B0%EB%B3%B8%EC%A0%81%EC%9D%B8-git-%EC%BB%A4%EB%B0%8B%EC%BB%A8%EB%B2%A4%EC%85%98-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0)
+- [https://wayhome25.github.io/git/2017/07/08/git-first-pull-request-story/](https://wayhome25.github.io/git/2017/07/08/git-first-pull-request-story/)
