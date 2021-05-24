@@ -6,10 +6,11 @@ tags: [NodeJS, Backend]
 
 <br>
 
-> 백엔드 API 리뉴얼 모든 과정 기록
+> 백엔드 API 리뉴얼하며 복습하는 시리즈.
 
-스펙 정립 [ing] <br>
-[git 커밋, 브렌치 방식 정립.](https://dont-think-about-too-much.github.io/2021/05/21/git-commit/) [ing]
+1. [협업 컨벤션 정하기: github 커밋, 브렌치 이용 방식.](https://dont-think-about-too-much.github.io/2021/05/21/0git-commit/)
+2. [백엔드 스펙 정하기](https://dont-think-about-too-much.github.io/2021/05/22/server-spec-inspect/)
+3. [의존성 관리/package.json](https://dont-think-about-too-much.github.io/2021/05/23/package-json/)
 
 <br><br>
 
