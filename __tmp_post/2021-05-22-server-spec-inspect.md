@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Node 백엔드 spec 정하기 [ Node 서버 리뉴얼 기록 ]
+title: Node 백엔드 spec 정하기 [ Node 서버 리뉴얼 기록 & 복습 ]
 tags: [Nodejs, renewal, spec]
 ---
 

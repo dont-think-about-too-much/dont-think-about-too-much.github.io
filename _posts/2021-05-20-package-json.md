@@ -1,7 +1,7 @@
 ---
 layout: post
-title: package.json & package-lock.json
-tags: [frontpage, jekyll, blog]
+title: package.json [ Node 서버 리뉴얼 기록 ]
+tags: [npm]
 
 ---
 <br>

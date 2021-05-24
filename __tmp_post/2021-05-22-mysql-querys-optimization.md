@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MySQL 쿼리 최적화 [ Node 서버 리뉴얼 기록 ]
+title: MySQL 쿼리 최적화 [ Node 서버 리뉴얼 기록 & 복습 ]
 tags: [MySQL, renewal, RDB]
 ---
 
