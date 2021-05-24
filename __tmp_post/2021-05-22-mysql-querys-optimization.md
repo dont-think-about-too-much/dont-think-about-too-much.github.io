@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MySQL 쿼리 최적화 [ Node 서버 리뉴얼 기록 & 복습 ]
+title: MySQL 쿼리 최적화 [ Node 백엔드 제작시 마주칠 모든 것 ]
 tags: [MySQL, renewal, RDB]
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 리뉴얼 시작 [ Node 서버 리뉴얼 기록 ]
+title: 리뉴얼 시작 [ Node 백엔드 제작시 마주칠 모든 것 ]
 tags: [NodeJS, Backend]
 ---
 
@@ -64,6 +64,7 @@ tags: [NodeJS, Backend]
 
 # 개발이 어느정도 됐다.
 
+- CORS 서버를 띄워주고 전달했는데 프론트측에서 안된다고 할 것이 분명하다.
 - README.md을 깔끔히
 - Load Balancing (nginx)
 - Process Manage (pm2?)
