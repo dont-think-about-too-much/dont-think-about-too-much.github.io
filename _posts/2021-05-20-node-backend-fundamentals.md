@@ -23,6 +23,8 @@ tags: [NodeJS, Backend]
 - DB - SQL or NoSQL
   - 모델링
   - Query
+    - 쿼리 최적화
+    - MongoDB 쿼리 이전 => 최적화 후 코드적으로, 성능적으로 향상 방식, 결과
   - Transaction
 - ORM
 - [의존성 관리: package.json (+ lock.json)을 제대로 알고 넘어값시다.](https://dont-think-about-too-much.github.io/2021/05/20/package-json/)
