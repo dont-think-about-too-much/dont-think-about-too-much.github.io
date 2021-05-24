@@ -6,14 +6,16 @@ tags: [Nodejs, renewal, spec]
 
 > 스펙을 정립하고 가자.
 
-## Nodejs 버전은?
+<br>
 
-![aa](../images/posts/lts.png)
+## Nodejs 버전은?
+>LTS(Long Term Support): 장기 지원 버전. 보통 짝수 버전들이 LTS이다.
+
 LTS만 쓰면 괜찮다고 본다. 다만 너무 최신은 또 좀 그렇고.<br>`14`로 선택.
 
 ---
 
-## framework?
+## Framework?
 
 개인적인 경험으로 `koa`, `express`의 차이는 이용하는 몇몇 모듈이 달라지는 것뿐이라고 판단된다. 차이가 거의 없으니 지금까지 이용했던 koa를 이용한다. 성능도 더 좋기도 하다. <br>
 개인적으로는 `nest`를 선호한다. 하지만 다음 사람이 코드를 인수인계받았을 때 비용이 덜드는 게 더 좋지않을까 싶다. 내 자리를 메꾸는 사람이 시니어는 분명히 아니다. 그렇다면 express만 해봤을 확률이 높다. 회사를 위해 express 혹은 koa를 이용하기로 !
