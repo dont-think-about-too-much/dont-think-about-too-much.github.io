@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Node 백엔드 spec 정하기 [ Node 백엔드 제작시 마주칠 모든 것 ]
+title: Node 백엔드 spec 정하기 [ Node 백엔드 제작시 마주칠 것들 ]
 tags: [Nodejs, renewal, spec]
 ---
 
