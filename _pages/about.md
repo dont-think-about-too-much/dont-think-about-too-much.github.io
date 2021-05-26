@@ -3,5 +3,7 @@ layout: page
 title: About
 ---
 
-Node
+Node<br>
 Backend
+
+Email: 18knee@gmail.com
