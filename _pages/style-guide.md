@@ -1,8 +1,4 @@
----
-layout: page
-title: Style Guide
-image: '/images/pages/styleguide.jpg'
----
+
 
 블로그 이사중이어요
 
