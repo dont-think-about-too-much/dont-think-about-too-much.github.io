@@ -48,4 +48,8 @@ tags: [Node, Backend, API TEST]
 ### + Postman Test
 postman으로 api들을 확인해왔다면 postman에서도 테스트 기능을 제공해준다. <br>
 굳이 api테스트까지는 jest, supertest를 이용하여 테스트하지 않아도 괜찮다고 본다.(물론 unit test는 스크립트를 작성해서 해야하지만.)<br>
-### [postman test 링크](https://learning.postman.com/docs/writing-scripts/test-scripts/)
+### [Postman API Test 링크](https://learning.postman.com/docs/writing-scripts/test-scripts/)
+
+<br><br>
+# References
+- [https://www.slideshare.net/genycho/rest-api-64569519](https://www.slideshare.net/genycho/rest-api-64569519)
