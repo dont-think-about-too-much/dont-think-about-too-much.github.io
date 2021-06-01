@@ -9,6 +9,9 @@ title: GoodArticles
 
 [우리는 이슈를 이렇게 사용하고 있어요 /팀 크레센도](https://mingeun.com/2020-06-24/team-crescendo-forte-memoirs/#%EC%9A%B0%EB%A6%AC%EB%8A%94-%EC%9D%B4%EC%8A%88%EB%A5%BC-%EC%9D%B4%EB%A0%87%EA%B2%8C-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B3%A0-%EC%9E%88%EC%96%B4%EC%9A%94)
 
+# TEST
+[REST API 테스팅 프레임워크](https://ridicorp.com/story/rest-api-testing/)
+
 
 # CICD
 
@@ -17,3 +20,14 @@ title: GoodArticles
 # 모니터링
 
 [sentry/ LINE 블로그](https://engineering.linecorp.com/ko/blog/log-collection-system-sentry-on-premise/)
+
+[모니터링 조언 /RIDI](https://ridicorp.com/story/monitoring-howto/)
+
+## 장애 복구 경험
+
+[리디북스 서비스 장애 복구 후기 /RIDI](https://ridicorp.com/story/idc-outage/)
+
+
+## 블로그
+- [Human-Computer Symbiosis](https://sangminpark.blog/)
+- [RIDI](https://ridicorp.com/story-category/all/)
