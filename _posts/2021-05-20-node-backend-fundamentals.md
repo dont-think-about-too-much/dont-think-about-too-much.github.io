@@ -14,7 +14,7 @@ tags: [NodeJS, Backend]
 4. Hello World 앱 만들기.
 5. Hello World 앱 CICD 설정
 6. TDD 진행 방식 정립
-<br><br>
+   <br><br>
 
 ---
 
@@ -49,6 +49,7 @@ tags: [NodeJS, Backend]
 
 # 개발 중:
 
+- 개발의 효율을 위해서 최대한 모든 걸 자동화한다.
 - TDD 해야해요. 다만들고 테스트 코드 짜지말구요.
 - 인풋 체크 [ required/ optional / enum / type]
 - 계층의 중요성 / 계층의 독립성 유지의 중요성
