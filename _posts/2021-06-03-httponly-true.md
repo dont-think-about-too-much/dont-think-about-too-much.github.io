@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'httpOnly: true & 로그아웃'
+title: '[Error] httpOnly: true & 로그아웃'
 tags: [Node, Backend, JWT]
 ---
 
