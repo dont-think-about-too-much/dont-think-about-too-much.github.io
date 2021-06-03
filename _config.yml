@@ -10,7 +10,7 @@ title:       Node.js&nbsp;Development
 email:       ''
 description: ''
 baseurl:     '' # The subpath of your site, e.g. /blog
-url:         https://dont-think-about-too-much.github.io/ # The base hostname & protocol for your site
+url:         'https://dont-think-about-too-much.github.io/' # The base hostname & protocol for your site
 twitter:     ''
 github:      ''
 instagram:   ''
@@ -26,6 +26,7 @@ sass:
 plugins:
   - jekyll-paginate
   - jekyll/tagging
+  - jekyll-sitemap
 
 include:
   - _pages

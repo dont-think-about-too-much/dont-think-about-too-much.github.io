@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dont-think-about-too-much.github.io/sitemap.xml
