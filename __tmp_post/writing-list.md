@@ -1,6 +1,8 @@
 # Easy and Usable
 - graphql nest file upload
 - API test with jest, supertest
+- CORS I guess you will beet cors issue [서버를 띄워주고 전달했는데 프론트측에서 안된다고 할 것이 분명하다.]
+- Nest.js 가 주목받는 이유/ nest의 구조와 좋은 node 백엔드의 설계, 구조를 고민해보는 시간. 개발 아키텍쳐를 고민해보는 시간.
 
 
 # Series 코드는 다 작성했어. 이젠 뭐해야돼.
