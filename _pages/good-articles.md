@@ -32,3 +32,6 @@ title: GoodArticles
 - [Human-Computer Symbiosis](https://sangminpark.blog/)
 - [RIDI](https://ridicorp.com/story-category/all/)
 - [FERNANDO 기술 블로그](https://fernando.kr/general/2021-06-01-appstore-experience-review/)
+
+<br><br>
+Node Backend Developer Node Backend Developer Node Backend Developer
