@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'AccessKey를 간수잘하셔야해요 !'
+title: 'AWS AccessKey를 간수잘하셔야해요 !'
 tags: [IAM, AWS, AccessKey]
 ---
 
