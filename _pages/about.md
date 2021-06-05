@@ -1,9 +1,9 @@
 ---
 layout: page
-title: About
+title: About 김문규
 ---
 
-Node Backend Developer Node Backend Developer Node Backend Developer                           
+Node Backend Developer Node Backend Developer Node Backend Developer
 
 **이메일**: 18knee@gmail.com<br>
 **이전 블로그**: [https://medium.com/nodejs-server](https://medium.com/nodejs-server)<br>
