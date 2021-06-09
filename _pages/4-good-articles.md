@@ -19,11 +19,19 @@ title: GoodArticles
 
 [CI/CD 자동화가 가져다준 행복/ LINE 블로그](https://engineering.linecorp.com/ko/blog/ci-cd-automation/)
 
+[How to deploy using AWS CodeDeploy with GitHub Actions](https://gist.github.com/jypthemiracle/edf6e92ed10960f3ac2e94fc6fd21a20)
+
+[Travis, CodeDeploy, Nodejs](https://velog.io/@jeff0720/Travis-CI-AWS-CodeDeploy-Docker-%EB%A1%9C-%EB%B0%B0%ED%8F%AC-%EC%9E%90%EB%8F%99%ED%99%94-%EB%B0%8F-%EB%AC%B4%EC%A4%91%EB%8B%A8-%EB%B0%B0%ED%8F%AC-%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%B6%95%ED%95%98%EA%B8%B0)
+
 # 모니터링
 
 [sentry/ LINE 블로그](https://engineering.linecorp.com/ko/blog/log-collection-system-sentry-on-premise/)
 
 [모니터링 조언 /RIDI](https://ridicorp.com/story/monitoring-howto/)
+
+## 이직
+
+[주니어 개발자를 위한 취업 정보](https://github.com/jojoldu/junior-recruit-scheduler)
 
 ## 장애 복구 경험
 
