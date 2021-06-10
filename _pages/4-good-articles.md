@@ -43,5 +43,8 @@ title: GoodArticles
 - [RIDI](https://ridicorp.com/story-category/all/)
 - [FERNANDO 기술 블로그](https://fernando.kr/general/2021-06-01-appstore-experience-review/)
 
+## 네트워크
+- [google.com을 입력하면 일어나는 일](https://bohyeon-n.github.io/)
+
 <br><br>
 Node Backend Developer Node Backend Developer Node Backend Developer
