@@ -47,6 +47,10 @@ async createWithoutTransaction(token: JWTToken, createPostInput: CreatePostInput
   }
 ```
 
+<br>
+
+# Transaction이 추가된 코드
+
 ```ts
 // with Transaction
 // post.service.ts
