@@ -10,11 +10,9 @@ TypeORM에서 Transaction을 어떻게 만드고 이용하는지 알아보자.
 
 **이번 글에서 이용할 것의 큰 틀은 1. EntityManager 와 2. QueryRunner 이 두개다.**
 
-> 1. Entity Manager
->    :EntityManager is similar to Repository and used to manage database operations such as insert, update, delete and load data. While Repository handles single entity, EntityManager is common to all entities and able to do operations on all entities. - [tutorialspoint](https://www.tutorialspoint.com/typeorm/typeorm_working_with_entity_manager.htm)
+> 1. Entity Manager: EntityManager is similar to Repository and used to manage database operations such as insert, update, delete and load data. While Repository handles single entity, EntityManager is common to all entities and able to do operations on all entities. - [tutorialspoint](https://www.tutorialspoint.com/typeorm/typeorm_working_with_entity_manager.htm)
 
-> 2. Query Runner
->    :Each instance of QueryRunner is a separate isolated database connection. Using query runners you can control your queries to execute using single database connection and manually control your database transaction. - [orkhan.gitbook.io](https://orkhan.gitbook.io/typeorm/docs/query-runner)
+> 2. Query Runner: Each instance of QueryRunner is a separate isolated database connection. Using query runners you can control your queries to execute using single database connection and manually control your database transaction. - [orkhan.gitbook.io](https://orkhan.gitbook.io/typeorm/docs/query-runner)
 
 <br>
 
