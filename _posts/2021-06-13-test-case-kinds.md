@@ -20,7 +20,7 @@ tags: [NodeJS, Backend, TEST, API]
 
 ## 리스폰스의 형태가 맞는지.
 
-- 검색 결과가 있을 때.
+### 검색 결과가 있을 때.
 
 아래가 미리 통일시켜둔 GET 요청에 대한 응답 형태라면 이 형태가 맞는지 체크한다.
 
@@ -63,7 +63,7 @@ expect(response.body.data).toHaveProperty("posts");
 expect(response.body.data.posts[0]).toHaveProperty("title");
 ```
 
-- 검색 결과가 없을 때
+### 검색 결과가 없을 때
 
 사람에 따라 검색 결과가 없을 때의 응답이 다르다. 어떤 이는 404 에러를 띄우기도 하고, 어떤 사람은 { }(빈 객체)를 전달해주기도 한다. 이 또한 통일되게 검사하면 된다.
 
