@@ -23,6 +23,7 @@ title: GoodArticles
 
 - [sentry/ LINE 블로그](https://engineering.linecorp.com/ko/blog/log-collection-system-sentry-on-premise/)
 - [모니터링 조언 /RIDI](https://ridicorp.com/story/monitoring-howto/)
+- [모니터링을 알지 못하는 사람을 위한 서버에서 무조건 체크해야 하는 핵심 모니터링 지표](https://www.whatap.io/ko/blog/6/index.html)
 
 ## 이직
 
