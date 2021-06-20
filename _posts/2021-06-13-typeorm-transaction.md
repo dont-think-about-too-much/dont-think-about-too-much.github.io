@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Transaction with TypeORM [ Node 백엔드 제작시 마주칠 것들 ]
-tags: [Node, Backend, Transaction]
+tags: [Nodejs, Backend, Transaction]
 ---
 
 쿼리가 여러개이고 그 쿼리들의 값이 서로에게 영향을 준다면 Transaction은 필수다. 특히나 수정기능의 API들에서 그렇다.

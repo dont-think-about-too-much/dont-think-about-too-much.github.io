@@ -9,7 +9,8 @@ tags: [Nodejs, renewal, spec]
 <br>
 
 ## Nodejs 버전은?
->LTS(Long Term Support): 장기 지원 버전. 보통 짝수 버전들이 LTS이다.
+
+> LTS(Long Term Support): 장기 지원 버전. 보통 짝수 버전들이 LTS이다.
 
 LTS만 쓰면 괜찮다고 본다. 다만 너무 최신은 또 좀 그렇고.<br>`14`로 선택.
 
@@ -41,6 +42,7 @@ PM2는 이름부터가 **Process Manager**이다. 설정에 따라 process 갯�
 ---
 
 ## INFRA
+
 "최대한 AWS를 이용한다."
 
 이용자 수에 따라 서버 적정 인프라를 설명해주는 글이다 ["천만 사용자를 위한 AWS 클라우드 아키텍처 진화하기"](https://www.slideshare.net/awskorea/aws-cloud-architecture-evolution-for-one-thousand-users-changsu-lee)
@@ -50,6 +52,7 @@ PM2는 이름부터가 **Process Manager**이다. 설정에 따라 process 갯�
 ---
 
 ## CICD
+
 "Github Action"
 
 내 주변에서 제일 많이 쓰는 것 같다. 퍼블릭 레포지토리면 공짜기도 하니깐 간단히 이걸로 정했다.

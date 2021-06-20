@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 'node에서 터미널 실행'
-tags: [NodeJS, Backend]
+title: "node에서 터미널 실행"
+tags: [Nodejs, Backend]
 ---
 
 ### node 백엔드 API에서 터미널 명령을 실행시키는 방법
@@ -25,45 +25,47 @@ spawn에서 이용하는 것은 `stdin`, `stdout`, `stderr`입니다.
 
 ```js
 // 1. spawn을 불러오고.
-import { spawn } from 'child_process';
+import { spawn } from "child_process";
 
 function spawnTest() {
-  return new Promise(function(resolve, reject) {
+  return new Promise(function (resolve, reject) {
     // 2. spawn을 이용하여 새 프로세스를 만듭니다.
-    let process = spawn('bash');
+    let process = spawn("bash");
 
     // 3. 실행할 명령을 작성합니다.
     // '\n' 은 엔터입니다. terminal 이기 때문에 엔터로 명령어를 입력해야 실행되겠죠?
-    const command = 'ls -al \n'; // a: 숨긴 파일까지 , l: 자세한 내용까지 검색
+    const command = "ls -al \n"; // a: 숨긴 파일까지 , l: 자세한 내용까지 검색
 
     try {
       // 4. 부모 프로세서에서 자식프로세서로 명령을 보냅니다.
       process.stdin.write(command);
-      
+
       // stdin을 이용할때는 end()로 반드시 입력을 끝내야합니다.
-      process.stdin.end(); 
+      process.stdin.end();
 
       // 5. 명령이 모두 실행됐다면 'close' 이벤트가 발생합니다.
-      process.on('close', function (code) {
-        console.log('end')
+      process.on("close", function (code) {
+        console.log("end");
         resolve(code);
       });
     } catch (err) {
-      console.log('error')
+      console.log("error");
       reject(err);
     }
-  })
- }
+  });
+}
 ```
+
 현재 위치의 파일 목록에 대한 정보를 보여주는 `spawnTest()` 함수입니다. child_process를 이용할 때는 대부분 비동기상황에서 이용하기 때문에 promise를 반환하도록 짰습니다.
 
 > spawn과 exec의 차이에서 말했듯이 spawn은 **Stream**으로 구성되어있기 때문에 이벤트를 감지할수 있습니다. 그렇기 때문에 'close'이벤트를 감지합니다.
 
 코드에 적힌 숫자대로 하시면 됩니다.
-1. spawn을 불러오고, 
+
+1. spawn을 불러오고,
 2. 새 프로세스를 생선합니다.
 3. 실행할 명령문을 작성하고.
 4. 부모프로세서에서 자식 프로세서로 작성한 명령문을 전달합니다.
 5. 명령문이 완료됐음을 알아야한다면 'close' 이벤트를 감지하여 이용합니다.
 
-역시나 잘만들어져 있는 언어라서 쉽게 이용할 수 있답니다 
+역시나 잘만들어져 있는 언어라서 쉽게 이용할 수 있답니다
