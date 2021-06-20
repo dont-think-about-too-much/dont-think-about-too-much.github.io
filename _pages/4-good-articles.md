@@ -1,6 +1,6 @@
 ---
 layout: page
-title: GoodArticles
+title: 남의 글 모음
 ---
 
 ## Really Good

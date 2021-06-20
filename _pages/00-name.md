@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Name
+title: 이름
 ---
 
 김문규
