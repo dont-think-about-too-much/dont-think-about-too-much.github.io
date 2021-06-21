@@ -1,3 +1,6 @@
+# 공부도 되고 쓰기도 좋은 글
+- [Dealing With Spiky Traffic and Thundering Herds](https://alexpareto.com/2020/06/15/thundering-herds.html)
+
 # Easy and Usable
 - graphql nest file upload
 - API test with jest, supertest
@@ -24,3 +27,4 @@
 # 참고 쓸만한 글들
 - 로컬 로그인 내용이 다 담겨있는 내용
 https://inhibitor1217.github.io/2019/06/17/devlog-authentication.html
+
