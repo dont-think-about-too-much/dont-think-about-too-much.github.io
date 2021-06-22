@@ -27,7 +27,7 @@ title: 남의 글 모음
 
 ## 이직
 
-- [주니어 개발자를 위한 취업 정보](https://github.com/jojoldu/junior-recruit-scheduler)
+- [주니어 개발자를 위한 취업 정보](https://github.com/jojoldu/junior-recruit-sche duler)
 
 ## 장애 복구 경험
 
@@ -51,3 +51,8 @@ title: 남의 글 모음
 - [Redis 서비스 전에 조사할 것들 /jacking75](https://jacking75.github.io/DB_Redis_service/)
   <br><br>
   Node Backend Developer Node Backend Developer Node Backend Developer
+- [Caching strategies to speed up your API](https://blog.logrocket.com/caching-strategies-to-speed-up-your-api/)
+- [Redis, 레디스를 사용한 데이터베이스 캐싱서버 운영하기](https://webisfree.com/2017-10-26/redis-%EB%A0%88%EB%94%94%EC%8A%A4%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%BA%90%EC%8B%B1%EC%84%9C%EB%B2%84-%EC%9A%B4%EC%98%81%ED%95%98%EA%B8%B0)
+- [* NODE response를 apicache로 처리하기](https://novemberde.github.io/node/2018/03/01/Node_apicache.html)
+
+## DB 튜닝 / 인덱싱
