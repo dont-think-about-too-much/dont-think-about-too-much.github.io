@@ -1,6 +1,8 @@
 # 공부도 되고 쓰기도 좋은 글
 - [Dealing With Spiky Traffic and Thundering Herds](https://alexpareto.com/2020/06/15/thundering-herds.html)
 - 몽고DB 다시 공부하기.
+- 소나큐브 (자바지기 강추)
+- 트레픽문제 터지면 뭐부터 할거야?
 
 # Easy and Usable
 - graphql nest file upload
