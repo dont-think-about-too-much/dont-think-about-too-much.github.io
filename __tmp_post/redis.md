@@ -43,6 +43,16 @@ SELECT * FROM users WHERE ID=token.userID
 
 https://aws.amazon.com/ko/getting-started/hands-on/building-fast-session-caching-with-amazon-elasticache-for-redis/
 
+### Q. 세션을 굳이 레디스로 써야하나? 그냥 로컬 메모리로 직접 이용하는 것보다 뭐가 좋지?
+1. (제일 중요) 서버가 한대만 돌아간다면 로컬메모리를 직접 써도 무방하다. 하지만 실서비스의 서버를 하나의 인스턴스로 돌리는건 불가능하다.(토이플젝이라면 몰라도) 당연히 여러대의 서버가 로드밸런서에 의해 요청이 분산되어진다. 로그인했던 유저의 정보가 매번 같은 인스턴스로 요청이 갈수 없기때문에 인스턴스간의 새션 정보를 공유할 수 있는 Redis와 같은 것들이 필요하게 된다.
+
+2. 레디스의 메모리 관리가 JS의 메모리 관리보다 훨씬 더 정교하고 효율적이다.
+
+3. 여러 종류의 자료구조를 제공하고 여러 편의기능들을 제공해준다.(pub/sub, atomicity 등)
+
+4. master/slave 구조로 복제본을 만들기 쉽다.
+
+
 ## Write Back (모아서 쓰기)
 
 영어라서 뭔가 싶을텐데 즉각 반영이 필요없는 것들을 캐시에 모아뒀다가 어느정도 쌓이면 한번에 저장/실행하는 것이다.

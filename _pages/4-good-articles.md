@@ -56,3 +56,8 @@ title: 남의 글 모음
 - [* NODE response를 apicache로 처리하기](https://novemberde.github.io/node/2018/03/01/Node_apicache.html)
 
 ## DB 튜닝 / 인덱싱
+
+## 트레픽
+
+- [LINE 메시징 서버가 새해 트래픽을 대비하는 과정](https://engineering.linecorp.com/ko/blog/how-line-messaging-servers-prepare-for-new-year-traffic/)
+- [6 Tips for better handling traffic spices](https://www.brcline.com/blog/6-tips-for-better-handling-traffic-spikes)
