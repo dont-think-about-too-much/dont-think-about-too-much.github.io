@@ -46,7 +46,7 @@ title: 남의 글 모음
 - [google.com을 입력하면 일어나는 일](https://bohyeon-n.github.io/)
 
 ## 캐싱
-
+- **[Redis in Action / redislabs](https://redislabs.com/ebook/part-1-getting-started/chapter-1-getting-to-know-redis/1-3-hello-redis/1-3-1-voting-on-articles/)
 - [우아한 Redis](https://www.slideshare.net/charsyam2/redis-196314086) [youtube](https://www.youtube.com/watch?v=mPB2CZiAkKM)
 - [Redis 실전 활용 예시 - 키 관리, 자료 구조 선택 /SLASH의 기술 블로그](https://slashuniverse.com/5)
 - [Redis 실전 활용 예시 - LIST를 활용한 PUB/SUB 구조 /SLASH의 기술 블로그](https://slashuniverse.com/7?category=993311)
