@@ -56,6 +56,7 @@ title: 남의 글 모음
 - [Caching strategies to speed up your API](https://blog.logrocket.com/caching-strategies-to-speed-up-your-api/)
 - [Redis, 레디스를 사용한 데이터베이스 캐싱서버 운영하기](https://webisfree.com/2017-10-26/redis-%EB%A0%88%EB%94%94%EC%8A%A4%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%BA%90%EC%8B%B1%EC%84%9C%EB%B2%84-%EC%9A%B4%EC%98%81%ED%95%98%EA%B8%B0)
 - [* NODE response를 apicache로 처리하기](https://novemberde.github.io/node/2018/03/01/Node_apicache.html)
+- [Redis 글 많이쓰는 블로거](http://antirez.com/latest/0)
 
 ## DB 튜닝 / 인덱싱
 
@@ -63,6 +64,9 @@ title: 남의 글 모음
 
 - [LINE 메시징 서버가 새해 트래픽을 대비하는 과정](https://engineering.linecorp.com/ko/blog/how-line-messaging-servers-prepare-for-new-year-traffic/)
 - [6 Tips for better handling traffic spices](https://www.brcline.com/blog/6-tips-for-better-handling-traffic-spikes)
+
+## Logging
+- [Logging: Best practices for Node.js Applications](https://blog.bitsrc.io/logging-best-practices-for-node-js-applications-8a0a5969b94c)
 
 ## githubio 블로그 템플릿
 - [Red's Digressions](https://rednafi.github.io/digressions/)

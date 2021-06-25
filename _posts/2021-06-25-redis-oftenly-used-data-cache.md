@@ -83,18 +83,20 @@ import * as redis from 'redis';
 import { promisify } from 'util';
 import { RedisLoader } from '../loaders/redis.loader';
 
+const redis = new RedisLoader();
+
+const client = redis.client;
+
+// 'redis' 모듈에서 제공하는 .get() 과 .set()은 콜백형태로 제공해준다.
+// 프로미스화 시켜서 이용하는 것이 편하다.
+const getAsync = promisify(this.client.get).bind(this.client);
+const setAsync = promisify(this.client.set).bind(this.client);
+
+
 @route('/test/redis/get-artists')
 @GET()
 @before([])
 async getArtists(ctx: Koa.Context) {
-    const redis = new RedisLoader();
-    
-    const client = redis.client;
-    
-    // 'redis' 모듈에서 제공하는 .get() 과 .set()은 콜백형태로 제공해준다.
-    // 프로미스화 시켜서 이용하는 것이 편하다.
-    const getAsync = promisify(this.client.get).bind(this.client);
-    const setAsync = promisify(this.client.set).bind(this.client);
 
     // Make DTO and pass to Service Layer
     let queryParams: IArtistQueryParams = ctx.request.query;
@@ -154,3 +156,6 @@ async getArtists(ctx: Koa.Context) {
 ### 마무리
 캐싱은 정말정말정말 중요하다. 아주 간단한 캐싱으로 첫 페이지를 보여주는 성능이 월등히 빨라진다.
 서비스에 있어 홈 화면이 느리게 나온다면 서비스의 신뢰가 떨어질수 있다고본다. 그러므로 무조건 홈화면에는 캐싱을 하자.
+
+## References
+- [Caching strategies to speed up your API](https://blog.logrocket.com/caching-strategies-to-speed-up-your-api/)
