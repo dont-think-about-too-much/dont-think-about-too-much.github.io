@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Redis as Cache [ Node 백엔드 제작시 마주칠 것들 ]
-tags: [Nodejs, infra, cache, scaling]
+title: "[Redis] Redis 왜 필요하고 어디에 쓰나"
+tags: [Nodejs, infra, cache, scaling, Redis]
 ---
 
 # Redis as Cache

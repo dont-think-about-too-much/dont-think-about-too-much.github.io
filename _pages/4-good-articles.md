@@ -63,3 +63,6 @@ title: 남의 글 모음
 
 - [LINE 메시징 서버가 새해 트래픽을 대비하는 과정](https://engineering.linecorp.com/ko/blog/how-line-messaging-servers-prepare-for-new-year-traffic/)
 - [6 Tips for better handling traffic spices](https://www.brcline.com/blog/6-tips-for-better-handling-traffic-spikes)
+
+## githubio 블로그 템플릿
+- [Red's Digressions](https://rednafi.github.io/digressions/)
