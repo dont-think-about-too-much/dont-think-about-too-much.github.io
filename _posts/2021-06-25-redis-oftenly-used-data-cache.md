@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Redis로 자주 검색하는 데이터 캐싱 [ Node 백엔드 제작시 마주칠 것들 ]
+title: "[Redis] 자주 검색하는 데이터 캐싱"
 tags: [Nodejs, Backend, scaling, cache]
 ---
 
