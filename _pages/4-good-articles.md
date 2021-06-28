@@ -14,6 +14,7 @@ title: 남의 글 모음
 ## TEST
 - **[프로그래머 이규원의 웹사이트](https://gyuwon.github.io/)
 - [REST API 테스팅 프레임워크](https://ridicorp.com/story/rest-api-testing/)
+- [소나큐브](https://www.sonarqube.org/)
 
 ## CICD
 
@@ -51,8 +52,6 @@ title: 남의 글 모음
 - [Redis 실전 활용 예시 - 키 관리, 자료 구조 선택 /SLASH의 기술 블로그](https://slashuniverse.com/5)
 - [Redis 실전 활용 예시 - LIST를 활용한 PUB/SUB 구조 /SLASH의 기술 블로그](https://slashuniverse.com/7?category=993311)
 - [Redis 서비스 전에 조사할 것들 /jacking75](https://jacking75.github.io/DB_Redis_service/)
-  <br><br>
-  Node Backend Developer Node Backend Developer Node Backend Developer
 - [Caching strategies to speed up your API](https://blog.logrocket.com/caching-strategies-to-speed-up-your-api/)
 - [Redis, 레디스를 사용한 데이터베이스 캐싱서버 운영하기](https://webisfree.com/2017-10-26/redis-%EB%A0%88%EB%94%94%EC%8A%A4%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%BA%90%EC%8B%B1%EC%84%9C%EB%B2%84-%EC%9A%B4%EC%98%81%ED%95%98%EA%B8%B0)
 - [* NODE response를 apicache로 처리하기](https://novemberde.github.io/node/2018/03/01/Node_apicache.html)
