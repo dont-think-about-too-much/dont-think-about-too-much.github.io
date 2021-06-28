@@ -83,6 +83,8 @@ public class StringCalculator {
 }
 ```
 
+<br>
+
 ## else 예약어를 쓰지 않는다.
 
 ```java
@@ -109,17 +111,18 @@ public class StringCalculator {
 ```
 
 <br>
-=>
+
+=> else 를 제거한다. else를 안쓰다보면 불필요한 로컬 변수 또한 사라지게 된다.
 
 ```java
 public class StringCalculator {
     public static int splitAndSum(String text) {
         if (text == null || text.isEmpty()) {       //
-            result = 0;                             // 불필요한 로컬변수를 만들
-        }                                           // 필요가 없어진다 !
+            result = 0;                             //
+        }                                           //
         String[] values = text.split(",|:");        //
-        return sum(values);                         // else 를 쓰지 않으면
-    }                                               // indent 또한 줄어든다.
+        return sum(values);                         //
+    }                                               //
 
     private static int sum(String[] values) {
         int result = 0;
@@ -131,6 +134,8 @@ public class StringCalculator {
 
 }
 ```
+
+else 문을 안쓰게 되면 불필요한 로컬 변수 또한 없앨 수 있다. 그리고 Indent까지 줄어든다.
 
 <br>
 
@@ -193,6 +198,8 @@ public class StringCalculator {
 
 메서드가 단 하나의 일만하므로 재활용하는데에 제약이 있다. 재활용을 위해 반드시 하나만 해야한다. 테스트를 위해서는 더더욱 하나의 일만해야한다.
 
+<br>
+
 # 로컬 변수가 정말 필요한가?
 
 ```java
@@ -228,7 +235,7 @@ public class StringCalculator {
 
 메서드(함수)의 의도가 잘 드러나도록 동등한 수준의 작업을 하는 여러 단계로 나눈다.
 
-**:추상화 레벨을 같게 한다.**
+**"추상화 레벨을 같게 한다."**
 
 ```java
 public class StringCalculator {
@@ -258,7 +265,11 @@ public class StringCalculator {
 }
 ```
 
-첫 코드와 리팩토링 결과 코드를 비교해보자
+코드를 전체적으로 같은 추상화 레벨로 만든다. if문 내의 조건식도 함수로 만들고, `test.split()`또한 함수로 만들어준다. 굳이 이렇게 까지 해야하나 싶지만 바꿔놓고 보면 훨씬 코드가 깔끔해진다. **이것이 개발의 보람이랄까?**
+
+<br><br>
+
+> 첫 코드와 리팩토링 결과 코드를 비교해보자
 
 ## 리팩토링 전
 
