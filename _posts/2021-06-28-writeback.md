@@ -128,6 +128,10 @@ async getPostDetail(ctx: Koa.Context) {
 await client.del('viewCounts', 'postID1');
 ```
 
+<br>
+
+## 마무리
+다시 한번 강조하면, `Write Back Cache`를 이용할수 있는 경우는 어느정도 범위의 오차가 있어도 되는 데이터에 한해서다. 만약 조회수가 100% 맞아야한다면, 이 방식을 이용하면 안된다.
 
 <br><br>
 

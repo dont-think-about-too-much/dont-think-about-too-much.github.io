@@ -19,7 +19,8 @@ tags: [Nodejs, infra, cache, scaling, Redis]
 - CDN
 - Database Caching
 - API Caching
-  등 여러 종류가 있고 알게모르게 대부분의 소프트웨어에서는 캐싱이 쓰이고 있다는 점은 알고하고 넘어가자.
+
+등 여러 종류가 있고 알게모르게 대부분의 소프트웨어에서는 캐싱이 쓰이고 있다는 점은 알고하고 넘어가자.
 
 # 왜 필요한가
 
