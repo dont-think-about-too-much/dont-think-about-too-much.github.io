@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Refactoring] 메서드"
+title: "[리팩토링] 메서드편"
 tags: [Refactoring]
 ---
 
@@ -37,7 +37,7 @@ public class StringCalculator {
 
 5분이 지났으면 같이 리팩토링해보자.
 
-# 한 메서드에 오직 한 단계의 들여쓰기(indent)만 한다.
+## 한 메서드에 오직 한 단계의 들여쓰기(indent)만 한다.
 
 ```java
 public class StringCalculator {
@@ -55,6 +55,8 @@ public class StringCalculator {
     }
 }
 ```
+
+<br>
 
 ==> **메서드를 분리하여 인덴트를 줄인다.**
 
@@ -81,7 +83,7 @@ public class StringCalculator {
 }
 ```
 
-# else 예약어를 쓰지 않는다.
+## else 예약어를 쓰지 않는다.
 
 ```java
 public class StringCalculator {
@@ -106,6 +108,9 @@ public class StringCalculator {
 }
 ```
 
+<br>
+=>
+
 ```java
 public class StringCalculator {
     public static int splitAndSum(String text) {
@@ -123,10 +128,13 @@ public class StringCalculator {
         }
         return result;
     }
+
 }
 ```
 
-# 메서드가 한가지 일만 하도록 구현하기
+<br>
+
+## 메서드가 한가지 일만 하도록 구현하기
 
 sum 함수가 계속 거슬린다. 하나의 일만하는거 같지가 않다.
 
@@ -181,7 +189,7 @@ public class StringCalculator {
 }
 ```
 
-이 코드 보자마자 든 생각이 포문 한번 더도는데 이게 정말 맞아? 생각하고 있었는데 바로 강사분께서 서비스에서 for문 돌리는 데이터는 대부분 크지 않기 때문에 성능에 아무 영향이 없다고 한다.
+이 코드 보자마자 든 생각이 for문 한번 더도는데 이게 정말 맞아? 생각하고 있었는데 바로 강사분께서 서비스에서 for문 돌리는 데이터는 대부분 크지 않기 때문에 성능에 아무 영향이 없다고 한다.
 
 메서드가 단 하나의 일만하므로 재활용하는데에 제약이 있다. 재활용을 위해 반드시 하나만 해야한다. 테스트를 위해서는 더더욱 하나의 일만해야한다.
 
@@ -216,11 +224,11 @@ public class StringCalculator {
 
 불필요한 로컬변수는 지워준다.
 
-# compose method pattern
+# Compose Method Pattern
 
 메서드(함수)의 의도가 잘 드러나도록 동등한 수준의 작업을 하는 여러 단계로 나눈다.
 
-:추상화 레벨을 같게 한다.
+**:추상화 레벨을 같게 한다.**
 
 ```java
 public class StringCalculator {
@@ -271,7 +279,7 @@ public class StringCalculator {
 }
 ```
 
-## 결과 코드
+## 리펙토링 후
 
 ```java
 public class StringCalculator {
@@ -302,3 +310,5 @@ public class StringCalculator {
 ```
 
 사람마다 다르겠지만 다른 사람이 이 두 코드를 받게 된다면 리팩토링 후의 코드가 더 보기 쉽다고 본다.
+
+다음 편은 클래스.
