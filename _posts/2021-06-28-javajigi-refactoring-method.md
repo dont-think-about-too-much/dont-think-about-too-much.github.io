@@ -1,3 +1,9 @@
+---
+layout: post
+title: "[Refactoring] 메서드"
+tags: [Refactoring]
+---
+
 > ["TDD 리팩토링 by 자바지기 박재성님"](https://www.youtube.com/watch?v=bIeqAlmNRrA&t=552s&ab_channel=%EC%9A%B0%EC%95%84%ED%95%9CTech)의 강연을 보고 리팩토링부분만 정리한 글이다.
 
 # 리팩토링 연습 - 메서드 분리
