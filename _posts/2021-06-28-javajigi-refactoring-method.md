@@ -231,6 +231,8 @@ public class StringCalculator {
 
 불필요한 로컬변수는 지워준다.
 
+<br>
+
 # Compose Method Pattern
 
 메서드(함수)의 의도가 잘 드러나도록 동등한 수준의 작업을 하는 여러 단계로 나눈다.
@@ -269,7 +271,7 @@ public class StringCalculator {
 
 <br><br>
 
-> 첫 코드와 리팩토링 결과 코드를 비교해보자
+# 첫 코드와 리팩토링 결과 코드를 비교해보자
 
 ## 리팩토링 전
 
@@ -289,6 +291,8 @@ public class StringCalculator {
     }
 }
 ```
+
+<br>
 
 ## 리펙토링 후
 
