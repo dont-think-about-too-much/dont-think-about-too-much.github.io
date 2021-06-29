@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[리팩토링] 메서드편"
+title: "[리팩토링 연습] 메서드"
 tags: [Refactoring]
 ---
 
