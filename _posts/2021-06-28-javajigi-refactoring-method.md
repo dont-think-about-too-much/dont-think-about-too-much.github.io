@@ -200,7 +200,7 @@ public class StringCalculator {
 
 <br>
 
-# 로컬 변수가 정말 필요한가?
+## 로컬 변수가 정말 필요한가?
 
 ```java
 public class StringCalculator {
@@ -233,7 +233,7 @@ public class StringCalculator {
 
 <br>
 
-# Compose Method Pattern
+## Compose Method Pattern
 
 메서드(함수)의 의도가 잘 드러나도록 동등한 수준의 작업을 하는 여러 단계로 나눈다.
 
