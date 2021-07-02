@@ -174,7 +174,7 @@ import Sentry from 'winston-transport-sentry-node';
 // Sentry 옵션을 설정한다.
 const options = {
     sentry: {
-        dsn: "https://10dbae2760914f1eaef3aa566afc8fe6@o883226.ingest.sentry.io/5836820"
+        dsn: ENV.get().SENTRY_DSN
     }
 };
 
