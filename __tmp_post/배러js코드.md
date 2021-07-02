@@ -70,18 +70,6 @@ for (let dog of dogs) {
 ```ts
 const dogs = {
     name: "Sam",
-    age: 10
-};
-
-const valuesMappedToArray = Object.values(dogs);
-
-console.log(valuesMappedToArray) // [ "Sam", 10 ]
-```
-values 혹은 keys들을 for문 돌릴때 이렇게 미리 추출해서 `map` 혹은 `forEach`를 돌리는게 더 보기 좋다.
-
-```ts
-const dogs = {
-    name: "Sam",
     age: 10,
 }
 
@@ -97,7 +85,8 @@ Object.keys(dogs).forEach(key => {
     // "age : 10"
 });
 
-Object.values(dogs).forEach(value => console.log(value)); // "Sam", 10
+Object.values(dogs).forEach(value => console.log(value)); 
+// "Sam", 10
 
 Object.entries(dogs).forEach(([key, value]) => {
     console.log(`${key}:${value}`)
@@ -105,6 +94,9 @@ Object.entries(dogs).forEach(([key, value]) => {
     // "age: 10"
 })
 ```
+values 혹은 keys들을 `for문` 돌릴때 이렇게 미리 추출해서 `map` 혹은 `forEach`를 돌리는게 더 보기 좋다.
+
+
 
 
 ## References
