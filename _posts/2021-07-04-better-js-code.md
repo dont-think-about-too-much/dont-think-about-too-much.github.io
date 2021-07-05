@@ -1,3 +1,11 @@
+---
+layout: post
+title: "[JS] Better Javascript Code 모음"
+tags: [Refactoring]
+---
+
+> 여러 글들에서 보게 되는 JS 작성 팁들을 모아두는 글이다.
+
 # 함수 선언식보다 함수 표현식을 이용한다.
 함수 선언식은 호이스팅이 된다. 도움이 될때도 많지만. 코드가 이상한 흐름으로 돌아갈 수도 있다. 어디에 있는 함수를 이용하는지 정확히 안뒤 이용하는 습관을 들이자.
 
@@ -31,6 +39,81 @@ const doubleArrayValuesImpure = (array) => {
 const doubleArrayValuesPure = (array) => array.map(number => number * 2)
 ```
 
+# 화살표함수를 바로 쓰지않고 함수 표현식으로 변수를 정의한 뒤 이용한다.
+`map`, `filter` 등과 같은 메서드에 넣을 화살표함수를 함수표현식으로 미리 정의한뒤 함수 이름만 넣어주자.
+
+```ts
+const names = ["Kim", "Lee", "Park"];
+
+// 화살표 함수를 .map() 에 바로 쓴다.
+const lowerCaseNames = names.map(name => {
+    return name.toLowerCase();
+});
+```
+
+```ts
+const names = ["Kim", "Lee", "Park"];
+
+// 화살표 함수를 바로 넣지 않고 따로 정의해준뒤 전달해준다.
+const namesToLowerCase = name => name.toLowerCase();
+
+const lowerCaseNames = names.map(namesToLowerCase);
+```
+
+# if문이 중첩되는 것과 if 조건이 길어지는 것을 피한다.
+백엔드 초보때는 한번쯤 아래와 같은 코드를 작성했을 것이다.
+```ts
+if(request.body) {
+    if (request.body.someField) {
+        // some code
+    }
+}
+```
+
+어느 순간부터 조금 성장하면 아래처럼 `&&` 연산자를 쓰게 된다.
+```ts
+if(request.body && request.body.someField) {
+    // some code
+}
+```
+
+그리고 조금더 깔끔하게 코드를 작성하고 싶은 욕심이 생기면 아래와 같은 코드까지도 간다.
+
+```ts
+const hasBodyAndSomeField = (request) => {
+    if (request.body && request.body.someField) {
+        return true;
+    }
+
+    return false;
+}
+
+if(hasBodyAndSomeField()) {
+    // some code
+}
+```
+
+# for문 대신 .map과 .forEach을 쓴다.
+for문보다 `.map`과 `.forEach`가 훨씬 보기 쉽다.
+```ts
+const teammates = [
+    { name: "Kim", age: 24 },
+    { name: "Lee", age: 30 },
+    { name: "Park", age: 50 },
+]
+
+// map 코드와 for of 를 비교해보자.
+
+// map 코드
+teammates.map(person => console.log(person.age))
+
+// for of 코드
+for (let person of teammates) {
+    console.log(person.age);
+};
+```
+`map`이 훨~ 씬 보기 좋다.
+
 # 항상 "==="를 이용한다.
 "==="를 쓰는 습관을 들여라
 
@@ -46,52 +129,35 @@ js에서는 값이 없을 때 "undefined"로 반환한다. 값이 없음을 나�
 
 # 읽기 편한게 퍼포먼스보다 중요하다. 퍼포먼스가 중요해지기 전까진.
 
-# for보다 map, filter, reduce를 선호한다.
-```js
-const dogs = [
-    { name: "Sam", age: 2}
-    { name: "Simon", age: 2}
-]
-
-// DO
-dogs.map(dob => console.log(dob))
-
-// DON'T
-for (let dog of dogs) {
-    console.log(dog)
-}
-```
-
 # Object 메서드를 활용한다.
 - Object.keys
 - Object.values
 - Object.entries
 
 ```ts
-const dogs = {
-    name: "Sam",
-    age: 10,
+const teammates = { 
+    name: "Kim", 
+    age: 24 
 }
 
 // Looping over objects
-
-for (let prop in dogs) {
+for (let prop in teammates) {
     console.log(prop); // "name", "age"
 }
 
-Object.keys(dogs).forEach(key => {
-    console.log(`${key} : ${dogs[key]}`);
-    // "name : Sam"
-    // "age : 10"
+Object.keys(teammates).forEach(key => {
+    console.log(`${key} : ${teammates[key]}`);
+    // name : "Kim"
+    // age : 24
 });
 
-Object.values(dogs).forEach(value => console.log(value)); 
-// "Sam", 10
+Object.values(teammates).forEach(value => console.log(value)); 
+// "Kim", 24
 
-Object.entries(dogs).forEach(([key, value]) => {
+Object.entries(teammates).forEach(([key, value]) => {
     console.log(`${key}:${value}`)
-    // "name: Sam"
-    // "age: 10"
+    // "name: Kim"
+    // "age: 24"
 })
 ```
 values 혹은 keys들을 `for문` 돌릴때 이렇게 미리 추출해서 `map` 혹은 `forEach`를 돌리는게 더 보기 좋다.
