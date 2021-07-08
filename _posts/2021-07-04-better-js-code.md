@@ -205,3 +205,4 @@ values 혹은 keys들을 `for문` 돌릴때 이렇게 미리 추출해서 `map` 
 ## References
 - https://javascript.plainenglish.io/50-javascript-best-practice-rules-to-write-better-code-86ce731311d7
 - https://betterprogramming.pub/5-javascript-tips-to-make-you-a-better-coder-f5de38cf782b
+- https://javascript.plainenglish.io/50-javascript-best-practice-rules-to-write-better-code-86ce731311d7
