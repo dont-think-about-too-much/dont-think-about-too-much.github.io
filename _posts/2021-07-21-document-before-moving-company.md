@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[JS] Better Javascript Code 모음"
+title: "[Node] 백엔드 이직시 인수인계 목록"
 tags: [Refactoring]
 ---
 
@@ -33,3 +33,5 @@ tags: [Refactoring]
 - 복잡한 메서드에 대해서는 디테일한 주석 필요.
 
 - 지금까지의 서비스 장애 목록.
+
+(계속 채워나갈 예정)
