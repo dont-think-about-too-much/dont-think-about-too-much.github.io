@@ -1,0 +1,11 @@
+---
+layout: post
+title: "7월 What I've done"
+tags: [Diary]
+---
+
+## 23일
+### 회사
+- 이직 전 서비스 전반적인 검수 및 검수 내용 FE에게 전달.
+- AWS -> Naver Cloud 이사 준비.
+- typeDI docs 1번 훑어봄.
