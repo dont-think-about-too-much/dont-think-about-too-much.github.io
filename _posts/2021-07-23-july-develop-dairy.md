@@ -14,4 +14,4 @@ tags: [Diary]
 
 - 이직할 회사 코드 파악 3시간
 - 이직 제안온 회사에 정중히 메일 보내기.
-- `새글` function과 parameter 앞에 붙은 \_(underscore) 사용
+- `새글` JS Underscore Convention
