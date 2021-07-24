@@ -7,7 +7,7 @@ tags: [JS]
 > [JS Tip of the Day: The Underscore Convention](https://forum.kirupa.com/t/js-tip-of-the-day-the-underscore-convention/643076) 를 번역한 글이다.
 > It is translated from [JS Tip of the Day: The Underscore Convention](https://forum.kirupa.com/t/js-tip-of-the-day-the-underscore-convention/643076).
 
-JS에서는 \_(underscore)가 함수에 붙거나 인자에 붙은 코드를 거의 없었다. 그러다 이번에 본 코드에서 함수와 함수의 인자들에 꽤 쓰길래 찾아본 글이다. 다른 언어들에서 쓰는 욛도와도 비슷한듯 하다.
+JS에서는 \_(underscore)가 함수에 붙거나 인자에 붙은 코드를 거의 없었다. 그러다 이번에 본 코드에서 함수와 함수의 인자들에 꽤 쓰길래 찾아본 글이다. 다른 언어들에서 쓰는 용도와도 비슷한듯 하다.
 
 # The Underscore Convention
 
@@ -27,7 +27,7 @@ class Candy {
 }
 ```
 
-언더스코어가 JS 런타임에서는 아무 의미없지만, 코드를 읽는 사람에게 코드의 목적을 제공해준다. 위의 예어서는 `_ingredient` 프로퍼티가 있다. 여기서는 이 프로퍼티가 private한 속성임을 나타내고 클래스 바깥에서는 이용되면 안된다는 것을 말해준다.
+언더스코어가 JS 런타임에서는 아무 의미없지만, 코드를 읽는 사람에게 코드의 목적을 제공해준다. 위의 예에서는 `_ingredient` 프로퍼티가 있다. 여기서는 이 프로퍼티가 private한 속성임을 나타내고 클래스 바깥에서는 이용되면 안된다는 것을 말해준다.
 
 ```js
 let bar = new Candy();
@@ -35,7 +35,7 @@ console.log(bar.isMadeOf("sugar")); // true (의도된 접근)
 console.log(bar._ingredient === "sugar"); // true (의도하지 않는 접근)
 ```
 
-런타임에서는 프로퍼티에 \_(언더스코어)가 붙었는지 아닌지 아무 신경도 쓰지 않는다. 다만 관례적으로 쓰지않아야 한다.
+런타임에서는 프로퍼티에 \_(언더스코어)가 붙었는지 아닌지 아무 신경도 쓰지 않는다. 다만 관례적으로 프로그래머는 클래스 외부에서 접근하지않아야한다.
 
 함수의 인자에도 언더스코어 붙는데 이는 함수에서 전달되긴하지만 이용되지 않을수도 있음을 나타낸다.
 
