@@ -14,4 +14,4 @@ tags: [Diary]
 
 - 이직할 회사 코드 파악 3시간
 - 이직 제안온 회사에 정중히 메일 보내기.
-- `새글` JS Underscore Convention
+- `새글` [JS Underscore Convention](https://dont-think-about-too-much.github.io/2021/07/23/july-develop-dairy/)
