@@ -15,3 +15,8 @@ tags: [Diary]
 - 이직할 회사 코드 파악 3시간
 - 이직 제안온 회사에 정중히 메일 보내기.
 - `새글` [JS Underscore Convention](https://dont-think-about-too-much.github.io/2021/07/23/july-develop-dairy/)
+
+## 25일 (일)
+
+- kafka, socketio로 채팅 기능 전반적인 흐름 파악.
+- kafka 로컬에 설치.(windows에선 에러가 꽤 많이 뜬다. 몇몇 글에서 윈도우는 테스트용으로만 쓰라고 하던데. 안좋긴한가보다.)
