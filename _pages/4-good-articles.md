@@ -41,6 +41,8 @@ title: 남의 글 모음
 - [Human-Computer Symbiosis](https://sangminpark.blog/)
 - [RIDI](https://ridicorp.com/story-category/all/)
 - [FERNANDO 기술 블로그](https://fernando.kr/general/2021-06-01-appstore-experience-review/)
+- [모두싸인](https://team.modusign.co.kr/)
+- [사람인](https://saramin.github.io/)
 
 ## 네트워크
 
