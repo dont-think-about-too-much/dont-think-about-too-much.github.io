@@ -32,3 +32,12 @@ tags: [Diary]
 
 - 테스트 서버 구현 시작.
 - TODO: 1. 기존 서버 구성과 동일하게 구현 실행 / 2. 실 서버 데이터중 일부 테스트 디비로 마이그레이션.
+
+- ubuntu에 설치된 mysql를 외부에서 접속하기.<br>
+`CREATE USER 'userName'@'yourPort' IDENTIFIED BY 'password';`<br>
+`GRANT ALL PRIVILEGES ON * . * TO 'userName'@'yourPort';` <br><br>
+포트에 대한 방화벽 설정은<br>
+`sudo ufw allow out 3306/tcp`<br>  
+`sudo ufw allow in 3306/tcp` <br><br>
+방화벽 설정 확인은<br>
+`sudo ufw status`
