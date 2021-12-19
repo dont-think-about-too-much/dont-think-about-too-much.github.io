@@ -11,6 +11,10 @@ title: 남의 글 모음
 - [스타트업 CTO의 레거시 개편 여정](https://dev.wisedog.net/2020/04/18/%EC%99%B8%EC%A3%BC-%EB%A0%88%EA%B1%B0%EC%8B%9C%EB%A1%9C%EB%B6%80%ED%84%B0%EC%9D%98-%EC%97%AC%EC%A0%95-1%ED%8E%B8/)
 - [우리는 이슈를 이렇게 사용하고 있어요 /팀 크레센도](https://mingeun.com/2020-06-24/team-crescendo-forte-memoirs/#%EC%9A%B0%EB%A6%AC%EB%8A%94-%EC%9D%B4%EC%8A%88%EB%A5%BC-%EC%9D%B4%EB%A0%87%EA%B2%8C-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B3%A0-%EC%9E%88%EC%96%B4%EC%9A%94)
 
+## Node.js
+- [Node.js: 비동기 프로그래밍의 이해](https://www.nextree.co.kr/p7292/)
+- [[NodeJS] nodejs는 single-thread가 아니다](https://medium.com/@rpf5573/nodejs-nodejs%EB%8A%94-single-thread%EA%B0%80-%EC%95%84%EB%8B%88%EB%8B%A4-f02b0278c390)
+
 ## TEST
 - **[프로그래머 이규원의 웹사이트](https://gyuwon.github.io/)
 - [REST API 테스팅 프레임워크](https://ridicorp.com/story/rest-api-testing/)
