@@ -10,9 +10,8 @@ tags: [Database, Backend]
 -----
 <br>
 
-몽고DB에서 String의 부분을 가지고 검색할때 이용하는 두가지가 **"$text"와 "$regex" 이다.**
+몽고DB에서 String의 부분을 가지고 검색할때 이용하는 두가지가 **"$text"와 "$regex" 이다.** 간단한 용례를 이렇다.
 
-간단한 용례를 이렇다.
 ### $regex 용례
 ```ts
 // $regex
@@ -21,6 +20,8 @@ const searchResult = await Model.find({
     $text: { $search: "apple", $caseSensitive: false }
 });
 ```
+
+<br>
 
 ### $text 용례
 ```ts
@@ -53,10 +54,11 @@ UserSchema.index({email: “text”,name: “text”}, {weights: {email: 1,name:
 <br>
 
 # 2. Full Text Search VS Partial Text Search
-## $regex는 partian text search가 된다.
+## $regex는 partial text search가 된다.
 *$regex*는 당연하게도 정규표현식 검색이다보니 부분적으로 단어가 맞아도 검색 결과에 포함된다. `name: apple`이 저장되어있을 때 `app`만 입력해도 apple을 찾는다. `ppl`을 입력해도, `pp`만 입력해도 말이다.
 
-## $text는 검색하는 단어가 100%(Full)로 맞는 것이 있어야 한다.
+## $text는 partial text search가 안된다.
+검색하는 단어가 100%(Full)로 맞는 것이 있어야 한다.
 반면 $text는 Full text search이다보니 검색하는 값이 단어(스페이스) 기준으로 100% 같아야 한다. 예를 들면, `content : "I have a apple"` 이 데이터가 있을 때 `{ $text: { $search: "app" } }`로 검색하면 결과값으로 아무것도 받을 수 없다. "I have a apple"를 스페이스 기준으로 분리된 체로 100% 매칭되는 것이 있어야만 찾을수 있다. 
 
 > text index tokenizes and stems the terms in the indexed fields for the index entries. / [mongodb docs](https://docs.mongodb.com/manual/core/index-text/)
